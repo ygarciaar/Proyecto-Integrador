@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Tecnológico El Sol- Inicio</title>
+    <link rel="stylesheet" href="estilos.css"> </head>
+<body>
+
+    <header class="main-header">
+
+        <div class="logo">
+            <img src="img/Logo_el_sol.png" alt="Logo Instituto Tecnológico El Sol" class="logo-img">
+        </div>            
+        
+        <nav class="main-nav">
+            <a href="#esencia">Nuestra Esencia</a>
+            <a href="#destacados">Destacados</a>
+            <a href="#niveles">Niveles Educativos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <button class="btn-auth" onclick="mostrarModal('login')">Iniciar Sesión</button>
+            <button class="btn-auth btn-primary" onclick="mostrarModal('register')">Registrarse</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Donde la Pasión se Convierte en Éxito Académico</h1>
+            <p>Descubre nuestro innovador sistema de clubes que impulsa el rendimiento y las oportunidades de becas.</p>
+            <a href="#niveles" class="btn-cta">Explora Nuestros Cursos</a>
+        </div>
+    </section>
+
+    <section id="esencia" class="section-content">
+         <h2>Nuestra Esencia</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Misión</h3>
+                <p>Brindar a estudiantes, docentes y comunidad en general una plataforma digital moderna, accesible y funcional que refleje los valores del Instituto Tecnológico El Sol. Nuestro objetivo es fortalecer la comunicación institucional, facilitar el acceso a la información académica y promover la integración tecnológica en los procesos educativos.</p>
+            </div>
+             <div class="card">
+                <h3>Visión</h3>
+                <p>Ser un referente en transformación digital educativa, mediante un sitio web dinámico, innovador y adaptable a las nuevas tecnologías, que impulse el crecimiento académico, fomente el aprendizaje continuo y proyecte al Instituto Tecnológico El Sol como una institución líder en educación técnica del país.</p>
+            </div>
+             <div class="card">
+                <h3>Valores</h3>
+                <p>Innovación: Adoptamos la tecnología como motor del cambio y la mejora continua.
+
+Accesibilidad: Garantizamos un entorno digital inclusivo, fácil de usar y disponible para todos.
+
+Compromiso: Trabajamos con responsabilidad y dedicación para reflejar la excelencia del instituto.
+
+Colaboración: Promovemos el trabajo en equipo entre estudiantes, docentes y comunidad educativa.
+
+Transparencia: Mantenemos información clara y actualizada que fortalece la confianza institucional.
+
+Sostenibilidad: Impulsamos el uso responsable de los recursos digitales para contribuir al desarrollo sostenible.</p>
+            </div>
+        </div>
+        </section>
+
+    <section id="destacados" class="section-content section-dark">
+        <h2>Destacados: Clubes y Noticias</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Club de Robótica Avanzada</h3>
+                <p>Mejora tu nota en Física y desarrolla habilidades de programación.</p>
+            </div>
+             <div class="card">
+                <h3>Logramos el 1er Puesto Nacional</h3>
+                <p>Nuestros estudiantes de 11° ganan el concurso de debate regional.</p>
+                
+            </div>
+             <div class="card">
+                <h3>Próximo Evento: Feria de Ciencias</h3>
+                <p>Inscripciones abiertas para la presentación de proyectos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="niveles" class="section-content">
+        <h2>Niveles Educativos</h2>
+        </section>
+
+    <section id="contacto" class="section-content section-dark">
+        <h2>Contacto</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Tu mensaje..." required></textarea>
+            <button type="submit" class="btn-cta">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-info">
+            <p>&copy; 2025 Colegio del Sol. Todos los derechos reservados.</p>
+            <p>Dirección | Teléfono | Email</p>
+        </div>
+        <div class="social-links">
+            </div>
+    </footer>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="cerrarModal('login')">&times;</span>
+            <h3>Iniciar Sesión</h3>
+            <form>
+                <input type="email" placeholder="Correo" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit" class="btn-cta">Acceder</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="cerrarModal('register')">&times;</span>
+            <h3>Registrarse</h3>
+            <form>
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit" class="btn-cta">Crear Cuenta</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Funciones básicas para mostrar/ocultar los modales de autenticación
+        function mostrarModal(type) {
+            const modalId = type === 'login' ? 'loginModal' : 'registerModal';
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function cerrarModal(type) {
+            const modalId = type === 'login' ? 'loginModal' : 'registerModal';
+            document.getElementById(modalId).style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
