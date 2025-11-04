@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGRESO DOCENTES - CONTENODO ACADEMICO</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <img src="img/imagen-profesor.jpg"alt="profesores">
+</head>
+<body>
+    <h1>INGRESO DOCENTES</h1>
+    <form action=""method="get">
+        <p>
+            <label for="nombre">Teachers:</label>
+            <input type="text" name="nombre" id="nombre" maxlength="50"/>
+        </p>
+         <p>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos" maxlength="50"/>
+        </p>
+
+        
+
+        <p>
+            <label for="correo">correo:</label>
+            <input type="text" name="correo" id="correo" maxlength="100"/>
+        </p>
+
+        <p>
+            <label for="poblacion">cursos acargo:</label>
+            <select name="poblacion" id="poblacion">
+            <option>matematicas</option>
+             <option>esoañol</option>
+              <option>ingles</option>
+               <option>catedra</option>
+            </select>
+        </p>
+
+        <p>
+            PRIMARIA-SECUNDARIA :
+            <input type="radio" name="primaria" id="primaria-p" value="p"/>
+             <label for="primaria-p" style="display: inline; font-weight: normal;">Primaria</label>
+
+             <input type="radio" name="secundaria" id="PRIMARIA-SECUNDARIA-s" value="s"/>
+             <label for="secundaria-s" style="display: inline; font-weight: normal;">Secundaria</label>
+        </p>
+
+         <p>
+            <input type="submit" value="INGRESO"/>
+         </p>
+
+    </form>
+    
+</body>
+</html>
