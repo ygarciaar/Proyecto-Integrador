@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffbea;
+    color: #333;
+}
+
+/* Encabezado */
+.header {
+    background-color: #fdd835;
+    text-align: center;
+    padding: 25px 15px;
+    position: relative;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.back-button {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: #fff176;
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background-color: #ffe082;
+}
+
+/* Menú desplegable */
+.menu-niveles {
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
+}
+
+.dropbtn {
+    background-color: #fdd835;
+    color: #333;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dropbtn:hover {
+    background-color: #ffeb3b;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    min-width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #fff59d;
+}
+
+.menu-niveles:hover .dropdown-content {
+    display: block;
+}
+
+/* Secciones */
+.nivel-section {
+    max-width: 900px;
+    margin: 60px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.nivel-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.nivel-section img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.nivel-section p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.nivel-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nivel-section ul li {
+    background-color: #fffde7;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* Footer */
+.footer {
+    background-color: #fdd835;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .nivel-section {
+        margin: 30px 15px;
+        padding: 25px;
+    }
+    .dropbtn {
+        width: 90%;
+    }
+}

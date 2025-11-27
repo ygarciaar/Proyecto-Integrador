@@ -1,3 +1,5 @@
+
+
 /* Variables de Color */
 :root {
     --color-primary: #FFD84D; /* Color institucional: Amarillo Sol */
@@ -18,6 +20,7 @@
 
 
 body {
+    background-color:  #f0f195;
     line-height: 1.6;
     color: var(--color-text);
 }
@@ -219,4 +222,167 @@ gap: 20px;
 .logo-img {
     height: 200px; /* Tamaño adecuado para el encabezado */
     width: auto;
+    position: absolute;
+    text-align: center;
+}
+
+body{
+    font-family: Arial, helvetica, sans-serif;
+background-color: #ffd84d;
+margin: 0;
+padding: 0%;
+}
+
+h1{
+    text-align: center;
+    margin: 1em 0;
+    font-size: 2.2em;
+    color: #333;
+}
+img{
+    width: 50%;
+    
+}
+
+form{
+    width: 50%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+p{
+    margin-bottom: 1.2em;
+}
+
+label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.3em;
+    color: #444;
+}
+
+input[type="text"]
+textarea,
+select{
+    width:100% ;
+    padding: 0.6em;
+    border: 1px solid #f1ee0e;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    border: color#007acc;
+    background-color: #d5e408;
+    outline: none;
+}
+/*radios y checkbox*/
+input[type="radio"],
+input[type="checkbox"]{
+    margin-right: 0.3em;
+    transform: scale(1.1);
+}
+
+/*Boton */
+    input[type="submit"]{
+        background-color: #ffd84d;
+        color: #1b1a1a;
+        border: none;
+        padding: o,8em 2em;
+        font-size: 1.1em;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0. 3s ease;
+        display: block;
+        margin: 1em auto 0 auto;
+
+
+    }
+
+    input [type="submit"]:hover{
+        background-color: #caec0a;
+    }
+
+    * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+
+.form-register{
+    width: 400px;
+    background:yellowgreen ;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+
+
+}
+
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid yellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.form-register p {
+height: 40px;
+text-align: center;
+font-size: 18px;
+line-height: 40px;
+
+}
+
+.form-register a {
+color: white;
+text-decoration: none;
+
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons{
+    width: 100%;
+    background: #1f52c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.main-nav a {
+    transition: 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color:#f0dda0;
 }

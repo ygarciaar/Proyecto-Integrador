@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnico en Electricidad - Instituto Tecnológico El Sol</title>
+    <link rel="stylesheet" href="curso_detalle.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="explora-cursos.html" class="back-button">← Volver a cursos</a>
+        <h1>Técnico en Contabilidad</h1>
+    </header>
+
+    <section class="curso-detalle">
+        <img src="img/Contabilidad.jpg" alt="Técnico en Contabilidad">
+        <div class="info">
+            <h2>Descripción del curso</h2>
+            <p>
+                Este programa forma técnicos competentes en instalación, mantenimiento y reparación 
+                de sistemas eléctricos residenciales e industriales, con énfasis en la seguridad y la eficiencia energética.
+            </p>
+
+            <h3>Duración:</h3>
+            <p>2 años (4 semestres)</p>
+
+            <h3>Modalidad:</h3>
+            <p>Presencial / Semipresencial</p>
+
+            <h3>Certificación:</h3>
+            <p>Título de Técnico Laboral en Electricidad</p>
+
+            <button class="btn-inscribirse" id="openForm">📝 Inscribirse al curso</button>
+        </div>
+    </section>
+
+    <!-- Formulario de inscripción -->
+    <div class="formulario" id="formulario">
+        <div class="form-content">
+            <h2>Formulario de Inscripción</h2>
+            <form>
+                <label>Nombre completo:</label>
+                <input type="text" placeholder="Tu nombre completo" required>
+
+                <label>Correo electrónico:</label>
+                <input type="email" placeholder="ejemplo@correo.com" required>
+
+                <label>Teléfono:</label>
+                <input type="tel" placeholder="Tu número de contacto" required>
+
+                <label>Motivo de interés:</label>
+                <textarea rows="3" placeholder="Cuéntanos por qué te interesa este curso"></textarea>
+
+                <button type="submit" class="btn-enviar">Enviar solicitud</button>
+                <button type="button" class="btn-cancelar" id="closeForm">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Instituto Tecnológico El Sol | Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        // Abrir y cerrar formulario
+        const openBtn = document.getElementById('openForm');
+        const closeBtn = document.getElementById('closeForm');
+        const formDiv = document.getElementById('formulario');
+
+        openBtn.addEventListener('click', () => formDiv.style.display = 'flex');
+        closeBtn.addEventListener('click', () => formDiv.style.display = 'none');
+    </script>
+</body>
+</html>
